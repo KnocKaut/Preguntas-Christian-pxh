@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: 'Roboto', Arial, sans-serif; /* Fuente de letra por defecto */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Color de fondo */
+  }
+  
+  header {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #3498db; /* Color del texto */
+    text-align: center;
+    padding: 20px;
+    border: 10px solid #000000; /* Borde negro de 10px */
+    border-radius: 20px; /* Bordes redondos */
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  section {
+    background-color: white;
+    border: 6px solid black; /* Borde negro de 6px */
+    border-radius: 6px; /* Bordes redondos de 6px */
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px; /* Bordes redondos */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra ligera */
+  }
+
+  .questions {
+    margin-bottom: 20px;
+  }
+
+  .questions h3 {
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 100px; /* Altura ajustada */
+    padding: 10px;
+    border: 2px solid black; /* Borde negro */
+    border-radius: 10px; /* Bordes redondos */
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-family: 'Roboto', Arial, sans-serif; /* Fuente de letra por defecto */
+  }
+
+  .buttons {
+    margin-top: 20px;
+  }
+
+  .green-button {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .red-button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Cambio de fuentes para los títulos de las secciones */
+  section h2 {
+    font-family: 'Georgia', serif; /* Fuente de letra para los títulos */
+    font-size: 2em; /* Tamaño del texto */
+    color: #3498db; /* Color del texto */
+    margin-bottom: 10px; /* Espacio inferior */
+  }
+
+  /* Fuente diferente para secciones específicas si se desea */
+  section:nth-child(odd) h2 {
+    font-family: 'Arial', sans-serif; /* Fuente diferente para secciones impares */
+  }
+</style>
+</head>
+<body background="https://st2.depositphotos.com/33704592/48392/i/450/depositphotos_483928034-stock-photo-abstract-simple-curve-creative-design.jpg">
+<header>
+  <img src="https://exelenciacbtis119.tripod.com/images/dgeti.png" width="90" height="90" style="border: 9px solid #ff4081; margin-right: 10px;"> 
+  <h1 style="font-family: 'Pacifico', cursive; font-size: 3em; margin: 0;">Ingeniería Industrial</h1>
+</header>
+
+<section>
+  <h2>Información del Alumno</h2>
+  <br>
+  <section>
+    <h3>Escuela: Centro De Estudios Tecnológicos Industrial Y De Servicios N°119</h3>
+    <h3>Alumno(a): Perez Estrada Christian Abraham</h3>
+    <h3>Grado Y Grupo: 4°CPM</h3>
+    <h3>Materia: Construye Páginas Web</h3>
+    <h3>Maestro(a): Petra Rodriguez Astudillo</h3>
+  </section>
+</section>
+
+<section class="questions">
+  <h2>Cuestionario sobre Ingeniería Industrial</h2>
+  
+  <section>
+    <h3>Pregunta 1: ¿Cuáles son los principales métodos de optimización en la Ingeniería Industrial?</h3>
+    <textarea id="respuesta1" name="respuesta1" placeholder="Escribe tu respuesta aquí..." required></textarea>
+  </section>
+  
+  <section>
+    <h3>Pregunta 2: ¿Cómo se puede mejorar la eficiencia en los procesos industriales?</h3>
+    <textarea id="respuesta2" name="respuesta2" placeholder="Escribe tu respuesta aquí..." required></textarea>
+  </section>
+  
+  <section>
+    <h3>Pregunta 3: ¿Cuál es la importancia del control de calidad en la Ingeniería Industrial?</h3>
+    <textarea id="respuesta3" name="respuesta3" placeholder="Escribe tu respuesta aquí..." required></textarea>
+  </section>
+  
+  <section>
+    <h3>Pregunta 4: ¿Qué tecnologías emergentes están impactando en la Ingeniería Industrial?</h3>
+    <textarea id="respuesta4" name="respuesta4" placeholder="Escribe tu respuesta aquí..." required></textarea>
+  </section>
+  
+  <section>
+    <h3>Pregunta 5: ¿Cómo se puede aplicar la logística en la optimización de la cadena de suministro?</h3>
+    <textarea id="respuesta5" name="respuesta5" placeholder="Escribe tu respuesta aquí..." required></textarea>
+  </section>
+  
+  <section>
+    <h3>Pregunta 6: ¿Qué papel juega la ergonomía en el diseño de espacios industriales?</h3>
+    <textarea id="respuesta6" name="respuesta6" placeholder="Escribe tu respuesta aquí..." required></textarea>
+  </section>
+
+  <div class="buttons">
+    <button class="green-button" onclick="enviarRespuestas()">Enviar</button>
+    <button class="red-button" onclick="cerrarVentana()">Cerrar</button>
+  </div>
+</section>
+
+<script>
+  function enviarRespuestas() {
+    // Aquí puedes implementar la lógica para procesar las respuestas
+    // Por ejemplo, recoger las respuestas desde los textarea
+    let respuestas = {
+      respuesta1: document.getElementById('respuesta1').value,
+      respuesta2: document.getElementById('respuesta2').value,
+      respuesta3: document.getElementById('respuesta3').value,
+      respuesta4: document.getElementById('respuesta4').value,
+      respuesta5: document.getElementById('respuesta5').value,
+      respuesta6: document.getElementById('respuesta6').value
+    };
+    
+    console.log(respuestas); // Aquí podrías enviar las respuestas a un servidor, por ejemplo
+    alert('Respuestas enviadas correctamente.');
+  }
+
+  function cerrarVentana() {
+    // Aquí puedes implementar la lógica para cerrar la ventana o hacer otra acción
+    alert('Ventana cerrada.');
+  }
+</script>
+
+</body>
+</html>
